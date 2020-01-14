@@ -54,12 +54,15 @@ color:
       k: '#2b2826'
     black: '#000000'
   brand:
+    # These set by starter, can change later
     primary: &color-brand-primary '#709425'
     primaryActive: '#709425'
     light: '#709425'
     lightActive: '#709425'
     dark: '#709425'
     darkActive: '#709425'
+    # header/background/main color
+    primaryBackground: '#E6FD89'
   special:
     attention: &color-special-attention orange
 # FONT
