@@ -1,3 +1,13 @@
+### TODO
+- [ ] content/meta/config.js - change siteUrl when we have custom domain
+- [ ] content/meta/config.js - change siteImage to a jpg of finished site
+- [ ] content/meta/config.js - set twitter handle
+- [ ] content/meta/config.js - set authorSocialLinks
+
+
+
+
+
 # HeroBlog
 
 A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
