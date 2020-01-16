@@ -1,4 +1,9 @@
 ### TODO
+- [ ] Update colors in header when at the top of the page
+- [ ] Change footer
+- [ ] Hide logo while hero is on top
+- [ ] Remove all posts except for one
+- [ ] Set last post to placeholder post
 - [ ] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
 - [ ] content/meta/config.js - set twitter handle
