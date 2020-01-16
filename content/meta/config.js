@@ -31,9 +31,11 @@ module.exports = {
   gravatarImgMd5: "",
 
   // social
-  authorSocialLinks: [
-    { name: "github", url: "" },
-    { name: "twitter", url: "" },
-    { name: "facebook", url: "" }
-  ]
+  authorSocialLinks: {
+    github: '',
+    twitter: '',
+    facebook: '',
+    youtube: 'http://www.youtube.com',
+    instagram: 'http://www.instagram.com',
+  }
 };
