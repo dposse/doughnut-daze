@@ -32,10 +32,10 @@ module.exports = {
 
   // social
   authorSocialLinks: {
-    github: '',
-    twitter: '',
-    facebook: '',
-    youtube: 'http://www.youtube.com',
-    instagram: 'http://www.instagram.com',
+    github: 'https://github.com/dposse/doughnut-daze',
+    twitter: 'https://twitter.com/',
+    facebook: 'https://www.facebook.com/',
+    youtube: 'https://www.youtube.com',
+    instagram: 'https://www.instagram.com',
   }
 };
