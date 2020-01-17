@@ -8,7 +8,7 @@
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
 - [ ] content/meta/config.js - set twitter handle
 - [ ] content/meta/config.js - set authorSocialLinks
-
+- [ ] Change the rest of the readme or delete?
 
 
 
