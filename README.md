@@ -10,6 +10,12 @@
 - [ ] content/meta/config.js - set authorSocialLinks
 - [ ] Change the rest of the readme or delete?
 
+### low priority
+- [ ] Add google analytics
+- [ ] Remove algolia
+- [ ] Check facebook integration, either implement or remove
+- [ ] Update class based to hook based
+- [ ] Fix gatsby, react warnings
 
 
 
