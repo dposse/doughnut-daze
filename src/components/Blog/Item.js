@@ -7,6 +7,10 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
+/**
+ * These are the blog post cards - has image, title, snippet, fancy animation on hover
+ */
+
 const Item = props => {
   const {
     theme,

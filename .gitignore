@@ -54,8 +54,8 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
+# dotenv environment variables file - uncommented so build can use algolia api key
+#.env
 
 .cache/
 .DS_Store

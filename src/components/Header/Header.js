@@ -90,9 +90,10 @@ class Header extends React.Component {
               }
             }
 
+            /* this block styles header when you are at the top of the page, initially background-color was transparent */
             &.homepage {
               position: absolute;
-              background-color: transparent;
+              background-color: ${theme.color.brand.primaryBackground};
               height: ${theme.header.height.homepage};
             }
           }
@@ -159,10 +160,10 @@ class Header extends React.Component {
 
               :global(a.logoType),
               h1 {
-                color: ${theme.color.neutral.white};
+                color: ${theme.text.color.primary};
               }
               h2 {
-                color: ${theme.color.neutral.gray.d};
+                color: ${theme.text.color.primary};
               }
             }
           }
@@ -200,10 +201,10 @@ class Header extends React.Component {
               &.homepage:not(.fixed) {
                 :global(a.logoType),
                 h1 {
-                  color: ${theme.color.neutral.white};
+                  color: ${theme.text.color.primary};
                 }
                 h2 {
-                  color: ${theme.color.neutral.gray.d};
+                  color: ${theme.text.color.primary};
                 }
               }
             }

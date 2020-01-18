@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 require("core-js/fn/array/from");
 
-import { FaHome } from "react-icons/fa/";
-import { FaSearch } from "react-icons/fa/";
-import { FaEnvelope } from "react-icons/fa/";
-import { FaTag } from "react-icons/fa/";
+import { FaYoutube } from "react-icons/fa/";
+import { FaInstagram } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
+
+import config from "../../../content/meta/config";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -22,12 +22,11 @@ class Menu extends React.Component {
         : page.node.frontmatter.title
     }));
 
+    // SET SOCIAL MEDIA ICONS HERE
+    // change the links in config file
     this.items = [
-      { to: "/", label: "Home", icon: FaHome },
-      { to: "/category/", label: "Categories", icon: FaTag },
-      { to: "/search/", label: "Search", icon: FaSearch },
-      ...pages,
-      { to: "/contact/", label: "Contact", icon: FaEnvelope }
+      { to: config.authorSocialLinks.youtube, label: "", icon: FaYoutube },
+      { to: config.authorSocialLinks.instagram, label: "", icon: FaInstagram }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu

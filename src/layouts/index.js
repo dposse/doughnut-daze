@@ -81,7 +81,7 @@ class Layout extends React.Component {
         query={graphql`
           query LayoutQuery {
             pages: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "//pages//" }, fields: { prefix: { regex: "/^\\d+$/" } } }
+              filter: { fileAbsolutePath: { regex: "//pages//" } }
               sort: { fields: [fields___prefix], order: ASC }
             ) {
               edges {
@@ -92,7 +92,6 @@ class Layout extends React.Component {
                   }
                   frontmatter {
                     title
-                    menuTitle
                   }
                 }
               }
