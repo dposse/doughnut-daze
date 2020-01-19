@@ -141,7 +141,7 @@ class Menu extends React.Component {
     const { screenWidth, theme, fixed } = this.props;
     const { open } = this.state;
 
-    const iconSize = (fixed) ? ``: `28px`;
+    const iconSize = (fixed) ? theme.header.icon.size.small : theme.header.icon.size.large;
 
     return (
       <React.Fragment>
