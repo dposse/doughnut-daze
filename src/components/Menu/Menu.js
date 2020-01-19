@@ -138,15 +138,17 @@ class Menu extends React.Component {
   };
 
   render() {
-    const { screenWidth, theme } = this.props;
+    const { screenWidth, theme, fixed } = this.props;
     const { open } = this.state;
+
+    const iconSize = (fixed) ? theme.header.icon.size.small : theme.header.icon.size.large;
 
     return (
       <React.Fragment>
         <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
           <ul className="itemList" ref={this.itemList}>
             {this.items.map(item => (
-              <Item item={item} key={item.label} icon={item.icon} theme={theme} />
+              <Item size={iconSize} item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
@@ -154,7 +156,7 @@ class Menu extends React.Component {
             screenWidth >= 1024 && (
               <ul className="hiddenItemList">
                 {this.state.hiddenItems.map(item => (
-                  <Item item={item} key={item.label} hiddenItem theme={theme} />
+                  <Item size={iconSize} item={item} key={item.label} hiddenItem theme={theme} />
                 ))}
               </ul>
             )}
