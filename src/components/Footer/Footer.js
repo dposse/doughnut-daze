@@ -19,6 +19,7 @@ const Footer = props => {
           padding: ${theme.space.inset.default};
           padding-top: 0;
           padding-bottom: 60px;
+          margin-top: 20px;
 
           :global(.gatsby-resp-image-wrapper) {
             width: 30px;

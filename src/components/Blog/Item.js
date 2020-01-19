@@ -33,7 +33,7 @@ const Item = props => {
       <li>
         <Link to={slug} key={slug} className="link">
           <div className="gatsby-image-outer-wrapper">
-            <Img fluid={fluid} />
+            <Img fluid={fluid} style={{zIndex: 1}} />
           </div>
           <h1>
             {title} <FaArrowRight className="arrow" />
