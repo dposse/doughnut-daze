@@ -1,6 +1,7 @@
 ### TODO
 - [X] Update colors in header when at the top of the page
-- [ ] Change footer
+- [X] Change footer
+  - [ ] Replace placeholder icon with ghost bunny icon
 - [ ] Hide logo while hero is on top
 - [X] Remove all posts except for one
 - [ ] Set last post to placeholder post

@@ -11,10 +11,18 @@ const Footer = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .footer {
+          display:flex;
+          align-items: center;
+          justify-content: center;
+
           background: ${theme.color.neutral.white};
           padding: ${theme.space.inset.default};
           padding-top: 0;
-          padding-bottom: 120px;
+          padding-bottom: 60px;
+
+          :global(.gatsby-resp-image-wrapper) {
+            width: 30px;
+          }
 
           :global(ul) {
             list-style: none;
