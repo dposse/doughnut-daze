@@ -2,9 +2,11 @@
 - [X] Update colors in header when at the top of the page
 - [X] Change footer
   - [ ] Replace placeholder icon with ghost bunny icon
+- [ ] Change background under hero
 - [ ] Hide logo while hero is on top
 - [X] Remove all posts except for one
-- [ ] Set last post to placeholder post
+- [X] Set last post to placeholder post
+- [ ] Edit initial post
 - [ ] Change site preview
 - [ ] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
