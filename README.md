@@ -5,6 +5,7 @@
 - [ ] Hide logo while hero is on top
 - [X] Remove all posts except for one
 - [ ] Set last post to placeholder post
+- [ ] Change site preview
 - [ ] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
 - [ ] content/meta/config.js - set twitter handle

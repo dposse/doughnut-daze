@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 const Item = props => {
-  const { theme, item: { label, to, icon: Icon } = {}, onClick } = props;
+  const { theme, item: { label, to, icon: Icon } = {}, onClick, size } = props;
 
   return (
     <React.Fragment>
@@ -14,7 +14,7 @@ const Item = props => {
           onClick={onClick}
           data-slug={to}
         >
-          {Icon && <Icon />} {label}
+          {Icon && <Icon size={size} />} {label}
         </a>
       </li>
 
@@ -97,6 +97,7 @@ const Item = props => {
 };
 
 Item.propTypes = {
+  size: PropTypes.string,
   item: PropTypes.object,
   hidden: PropTypes.bool,
   onClick: PropTypes.func,
