@@ -2,11 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Footer = props => {
-  const { html, theme } = props;
+  const { html, gbLogo, theme } = props;
+  const logoSrc = gbLogo.resize.src;
+  const logoHTML = `<img src=${logoSrc} alt=''/>`;
+  const combinedHTML = logoHTML + html;
 
   return (
     <React.Fragment>
-      <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
+      <footer className="footer" dangerouslySetInnerHTML={{__html: combinedHTML}} />
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -21,7 +24,7 @@ const Footer = props => {
           padding-bottom: 60px;
           margin-top: 20px;
 
-          :global(.gatsby-resp-image-wrapper) {
+          :global(img) {
             width: 30px;
           }
 
