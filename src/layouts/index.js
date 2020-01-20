@@ -100,15 +100,21 @@ class Layout extends React.Component {
               id
               html
             }
+            gbLogo: imageSharp(fluid: { originalName: { regex: "/GB_Logo_/" } }) {
+              resize(width: 100, quality: 90, cropFocus: CENTER) {
+                src
+              }
+            }
           }
         `}
         render={data => {
           const { children } = this.props;
           const {
             footnote: { html: footnoteHTML },
-            pages: { edges: pages }
+            pages: { edges: pages },
+            gbLogo
           } = data;
-
+          console.log(footnoteHTML, gbLogo);
           return (
             <ThemeContext.Provider value={this.state.theme}>
               <FontLoadedContext.Provider value={this.state.font400loaded}>
@@ -120,7 +126,7 @@ class Layout extends React.Component {
                       theme={this.state.theme}
                     />
                     <main>{children}</main>
-                    <Footer html={footnoteHTML} theme={this.state.theme} />
+                    <Footer html={footnoteHTML} gbLogo={gbLogo} theme={this.state.theme} />
 
                     {/* --- STYLES --- */}
                     <style jsx>{`

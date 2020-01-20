@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Footer = props => {
-  const { html, theme } = props;
+const Footer = ({ html, gbLogo, theme }) => {
+  //need to add logo to html for dangerouslySetInnerHTML
+  //logo is passed separately from html as it is its own graphql query item.
+  //  this was necessary to set a higher image quality
+  const combinedHTML = `<img src=${gbLogo.resize.src} alt=''/>` + html;
 
   return (
     <React.Fragment>
-      <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
+      <footer className="footer" dangerouslySetInnerHTML={{__html: combinedHTML}} />
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -21,7 +24,7 @@ const Footer = props => {
           padding-bottom: 60px;
           margin-top: 20px;
 
-          :global(.gatsby-resp-image-wrapper) {
+          :global(img) {
             width: 30px;
           }
 
