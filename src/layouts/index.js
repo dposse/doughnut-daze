@@ -101,7 +101,7 @@ class Layout extends React.Component {
               html
             }
             gbLogo: imageSharp(fluid: { originalName: { regex: "/GB_Logo_/" } }) {
-              resize(width: 1200, quality: 90, cropFocus: CENTER) {
+              resize(width: 100, quality: 90, cropFocus: CENTER) {
                 src
               }
             }
