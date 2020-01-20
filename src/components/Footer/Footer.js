@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Footer = props => {
-  const { html, gbLogo, theme } = props;
-  const logoSrc = gbLogo.resize.src;
-  const logoHTML = `<img src=${logoSrc} alt=''/>`;
-  const combinedHTML = logoHTML + html;
+const Footer = ({ html, gbLogo, theme }) => {
+  //need to add logo to html for dangerouslySetInnerHTML
+  //logo is passed separately from html as it is its own graphql query item.
+  //  this was necessary to set a higher image quality
+  const combinedHTML = `<img src=${gbLogo.resize.src} alt=''/>` + html;
 
   return (
     <React.Fragment>
