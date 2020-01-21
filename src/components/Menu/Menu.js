@@ -4,6 +4,7 @@ require("core-js/fn/array/from");
 
 import { FaYoutube } from "react-icons/fa/";
 import { FaInstagram } from "react-icons/fa/";
+import { FaTwitter } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
@@ -26,7 +27,8 @@ class Menu extends React.Component {
     // change the links in config file
     this.items = [
       { to: config.authorSocialLinks.youtube, label: "", icon: FaYoutube },
-      { to: config.authorSocialLinks.instagram, label: "", icon: FaInstagram }
+      { to: config.authorSocialLinks.instagram, label: "", icon: FaInstagram },
+      { to: config.authorSocialLinks.twitter, label: "", icon: FaTwitter }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
