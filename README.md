@@ -3,7 +3,7 @@
 - [X] Change footer
   - [X] Replace placeholder icon with ghost bunny icon
 - [X] Change background under hero
-- [ ] Hide logo while hero is on top
+- [X] Hide logo while hero is on top
 - [X] Remove all posts except for one
 - [X] Set last post to placeholder post
 - [ ] Edit initial post

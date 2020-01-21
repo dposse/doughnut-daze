@@ -121,9 +121,10 @@ class Header extends React.Component {
             width: 44px;
             transition: all 0.5s;
 
+            /* setting size of icon to 0 as a design decision, originally height and width were 60px  */
             .homepage & {
-              height: 60px;
-              width: 60px;
+              height: 0px;
+              width: 0px;
             }
 
             img {
