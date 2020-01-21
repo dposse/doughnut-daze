@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: "Doughnut Daze", // <title>
   shortSiteTitle: "Doughnut Daze", // <title> ending for posts and pages
   siteDescription: "Doughnut Daze - finding the best doughnuts",
-  siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com", // TODO: change url
+  siteUrl: "https://doughnut-daze.com/",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
