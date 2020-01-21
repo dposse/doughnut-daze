@@ -6,12 +6,14 @@
 - [X] Hide logo while hero is on top
 - [X] Remove all posts except for one
 - [X] Set last post to placeholder post
+- [X] Add twitter icon
 - [ ] Edit initial post
 - [ ] Change site preview
 - [X] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
-- [ ] content/meta/config.js - set twitter handle
-- [ ] content/meta/config.js - set authorSocialLinks
+- [X] content/meta/config.js - set twitter handle
+- [X] content/meta/config.js - set instagram handle
+- [ ] content/meta/config.js - set youtube handle
 - [ ] Change the rest of the readme or delete?
 
 ### low priority
