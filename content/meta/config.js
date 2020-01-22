@@ -4,7 +4,7 @@ module.exports = {
   siteDescription: "Doughnut Daze - finding the best doughnuts",
   siteUrl: "https://doughnut-daze.com/",
   // pathPrefix: "",
-  siteImage: "preview.jpg",
+  siteImage: "doughnutdazepreview.jpg",
   siteLanguage: "en",
 
   /* author */
