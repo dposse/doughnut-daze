@@ -13,7 +13,10 @@ const Seo = props => {
   const title = postTitle ? `${postTitle} - ${config.shortSiteTitle}` : config.siteTitle;
   const description = postDescription ? postDescription : config.siteDescription;
   const image = postCover ? postCover : config.siteImage;
-  const url = config.siteUrl + config.pathPrefix + postSlug;
+  // below was giving a url of doughnut-daze.com/undefinedundefined
+  // no pathPrefix is set in config, also no postSlug exists for homepage
+  // leaving it in block comment in case it is useful for blog post links
+  const url = config.siteUrl /*+ config.pathPrefix + postSlug;*/
 
   return (
     <Helmet
