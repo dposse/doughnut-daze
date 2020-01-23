@@ -8,13 +8,16 @@
 - [X] Set last post to placeholder post
 - [X] Add twitter icon
 - [ ] Edit initial post
-- [ ] Change site preview
+- [ ] Change site preview - unsure why when sharing site through text still showing old preview
 - [X] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
 - [X] content/meta/config.js - set twitter handle
 - [X] content/meta/config.js - set instagram handle
 - [ ] content/meta/config.js - set youtube handle
 - [ ] Change the rest of the readme or delete?
+
+### Bugs
+- [ ] When shared by text, goes to doughnut-daze.com/undefinedundefined
 
 ### low priority
 - [ ] Add google analytics
