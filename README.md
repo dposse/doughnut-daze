@@ -17,7 +17,7 @@
 - [ ] Change the rest of the readme or delete?
 
 ### Bugs
-- [ ] When shared by text, goes to doughnut-daze.com/undefinedundefined
+- [X] When shared by text, goes to doughnut-daze.com/undefinedundefined
 
 ### low priority
 - [ ] Add google analytics
