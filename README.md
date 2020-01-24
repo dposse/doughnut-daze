@@ -20,7 +20,7 @@
 - [X] When shared by text, goes to doughnut-daze.com/undefinedundefined
 
 ### low priority
-- [ ] Add google analytics
+- [X] Add google analytics
 - [ ] Remove algolia
 - [ ] Check facebook integration, either implement or remove
 - [ ] Update class based to hook based
