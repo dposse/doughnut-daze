@@ -5,6 +5,12 @@ cover: photo-1490474418585-ba9bad8fd0ea.jpg
 author: greg lobinski
 ---
 
+# Testing video plugin:
+
+`video: https://www.youtube.com/embed/2Xc9gXyf2G4`
+`youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4`
+`youtube: 2Xc9gXyf2G4`
+
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, [adipiscing](http://google.com) eu pulvinar vel, sodales vitae dui. :thumbsup: :smile: :sparkler:
 
 Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
