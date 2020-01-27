@@ -114,7 +114,7 @@ class Layout extends React.Component {
             pages: { edges: pages },
             gbLogo
           } = data;
-          console.log(footnoteHTML, gbLogo);
+          console.log(children.props.data);
           return (
             <ThemeContext.Provider value={this.state.theme}>
               <FontLoadedContext.Provider value={this.state.font400loaded}>
