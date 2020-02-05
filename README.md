@@ -7,8 +7,8 @@
 - [X] Remove all posts except for one
 - [X] Set last post to placeholder post
 - [X] Add twitter icon
-- [ ] Edit initial post
-  - [ ] Change post template to only show a youtube video on landing page
+- [X] Edit initial post
+  - [X] Change post template to only show a youtube video on landing page
 - [ ] Change site preview - unsure why when sharing site through text still showing old preview
 - [X] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
