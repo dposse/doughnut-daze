@@ -15,6 +15,7 @@ const Item = props => {
   const {
     theme,
     post: {
+      html,
       excerpt,
       fields: { slug, prefix },
       frontmatter: {
@@ -31,7 +32,9 @@ const Item = props => {
   return (
     <React.Fragment>
       <li>
-        <Link to={slug} key={slug} className="link">
+        <div dangerouslySetInnerHTML={{__html: html}} />
+        {/* keeping below original post template */}
+        {/* <Link to={slug} key={slug} className="link">
           <div className="gatsby-image-outer-wrapper">
             <Img fluid={fluid} style={{zIndex: 1}} />
           </div>
@@ -52,7 +55,7 @@ const Item = props => {
             )}
           </p>
           <p>{excerpt}</p>
-        </Link>
+        </Link> */}
       </li>
 
       {/* --- STYLES --- */}
@@ -175,8 +178,8 @@ const Item = props => {
         }
         @from-width desktop {
           li {
-            margin: ${`calc(${theme.space.default} * 4) 0 calc(${theme.space.default} * 5)`};
-            padding: 0 0 ${`calc(${theme.space.default} * 2)`};
+            margin: ${`calc(${theme.space.default} * 4) 0 calc(${theme.space.default} * 2)`};
+            /* padding: 0 0 ${`calc(${theme.space.default} * 2)`}; */
 
             &::after {
               bottom: ${`calc(${theme.space.default} * -1.5)`};
@@ -204,25 +207,6 @@ const Item = props => {
             padding: ${`0 calc(${theme.space.default} * 2)`};
           }
           li {
-            &:hover {
-              border: 1px solid ${theme.line.color};
-              box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
-
-              &:after {
-                bottom: ${`calc(${theme.space.default} * -2.5)`};
-              }
-              :global(.gatsby-image-wrapper) {
-                transform: scale(1.1);
-              }
-              h1 {
-                color: ${theme.blog.h1.hoverColor};
-              }
-              :global(.arrow) {
-                opacity: 1;
-                stroke: ${theme.color.special.attention};
-                transform: translateX(0);
-              }
-            }
             :global(.gatsby-image-wrapper) {
               transition: all ${theme.time.duration.default};
             }
@@ -249,3 +233,26 @@ Item.propTypes = {
 };
 
 export default Item;
+
+
+/* hover not needed right now - but keeping in case we go back to original posts outside of videos
+ this was inside the li {} scrope
+            &:hover {
+              border: 1px solid ${theme.line.color};
+              box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
+
+              &:after {
+                bottom: ${`calc(${theme.space.default} * -2.5)`};
+              }
+              :global(.gatsby-image-wrapper) {
+                transform: scale(1.1);
+              }
+              h1 {
+                color: ${theme.blog.h1.hoverColor};
+              }
+              :global(.arrow) {
+                opacity: 1;
+                stroke: ${theme.color.special.attention};
+                transform: translateX(0);
+              }
+            } */
