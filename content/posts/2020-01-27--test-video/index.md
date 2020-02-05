@@ -6,5 +6,3 @@ author: sup
 ---
 
 `youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4`
-
-NOTE - currently the post template requires all four above tags
