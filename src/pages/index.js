@@ -80,6 +80,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          html
           excerpt
           fields {
             slug
