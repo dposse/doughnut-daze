@@ -66,7 +66,8 @@ class Layout extends React.Component {
 
     font.load(null, 10000).then(
       () => {
-        console.log(`${name} is available`);
+        // leaving below if useful for debugging
+        // console.log(`${name} is available`);
         this.setState({ [`${name}loaded`]: true });
       },
       () => {
@@ -114,7 +115,7 @@ class Layout extends React.Component {
             pages: { edges: pages },
             gbLogo
           } = data;
-          console.log(footnoteHTML, gbLogo);
+          
           return (
             <ThemeContext.Provider value={this.state.theme}>
               <FontLoadedContext.Provider value={this.state.font400loaded}>

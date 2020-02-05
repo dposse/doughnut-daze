@@ -7,7 +7,8 @@
 - [X] Remove all posts except for one
 - [X] Set last post to placeholder post
 - [X] Add twitter icon
-- [ ] Edit initial post
+- [X] Edit initial post
+  - [X] Change post template to only show a youtube video on landing page
 - [ ] Change site preview - unsure why when sharing site through text still showing old preview
 - [X] content/meta/config.js - change siteUrl when we have custom domain
 - [ ] content/meta/config.js - change siteImage to a jpg of finished site
@@ -21,6 +22,8 @@
 
 ### low priority
 - [X] Add google analytics
+- [ ] Fix header on post pages - doesn't match landing page where logo is hidden when scrolled to the top
+- [ ] Revert post template and create a separate video template
 - [ ] Remove algolia
 - [ ] Check facebook integration, either implement or remove
 - [ ] Update class based to hook based
