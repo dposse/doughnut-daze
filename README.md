@@ -19,6 +19,8 @@
 - [X] content/meta/config.js - set instagram handle
 - [ ] content/meta/config.js - set youtube handle
 - [ ] Change the rest of the readme or delete?
+- [ ] Set env variables in netlify
+- [ ] Accessibility
 
 ### Bugs
 - [X] When shared by text, goes to doughnut-daze.com/undefinedundefined
