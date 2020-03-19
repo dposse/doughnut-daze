@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { FaArrowDown } from "react-icons/fa/";
+import logo from "../../images/png/doughnut-daze-logo-transparency.png";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
@@ -9,7 +9,7 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        
+        <img src={logo} alt='doughnut logo in hero'/>
       </section>
 
       {/* --- STYLES --- */}
@@ -27,6 +27,10 @@ const Hero = props => {
           height: 100px;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
+
+          & img {
+            width: 50%;
+          }
         }
 
         h1 {
