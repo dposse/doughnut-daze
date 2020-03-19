@@ -13,7 +13,7 @@ module.exports = {
 
   /* info */
   headerTitle: "Doughnut Daze",
-  headerSubTitle: "these are the Doughnut Daze of our lives",
+  headerSubTitle: "an ode to the doughnut, but it's kind of a bad song",
 
   /* manifest.json */
   manifestName: "Doughnut Daze",
@@ -34,7 +34,7 @@ module.exports = {
   authorSocialLinks: {
     github: 'https://github.com/dposse/doughnut-daze',
     twitter: 'https://twitter.com/DazeDoughnut',
-    youtube: 'https://www.youtube.com',
+    youtube: 'https://www.youtube.com/channel/UCanpqhAf2Fgd7tRqX0PDOIA/',
     instagram: 'https://www.instagram.com/doughnut_daze/',
   }
 };
